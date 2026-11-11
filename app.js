@@ -311,7 +311,7 @@ async function viewUpload() {
     <label class="check"><input type="checkbox" id="upNotify" checked> Notify subscribers</label>
     <div id="upProg" hidden><div class="progress"><i id="upBar"></i></div><p class="note" id="upMsg" style="margin-top:6px"></p></div>
     <div><button class="btn btn--pri" id="upGo">Upload to YouTube</button></div>
-    <p class="note">Keep this tab open until the upload finishes. If your Google Cloud project has not passed YouTube's API audit, YouTube forces API uploads to private; switch visibility in YouTube Studio after uploading.</p>
+    <p class="note">Keep this tab open until the upload finishes. Important: until your Google Cloud project passes YouTube's API compliance audit, YouTube locks every video uploaded from this page as private, and it cannot be made public or scheduled afterwards, even in YouTube Studio. Upload videos that need to go public directly in YouTube Studio; you can still edit them and see their stats here.</p>
   </div></div>`;
   const drop = $('#drop'), inp = $('#upFile');
   const setFile = f => { if (!f) return; u.file = f; $('#dropName').textContent = f.name + ' · ' + fmtSize(f.size); if (!$('#upTitle').value) $('#upTitle').value = f.name.replace(/\.[^.]+$/, '').replace(/[_-]+/g, ' ').slice(0, 100); };

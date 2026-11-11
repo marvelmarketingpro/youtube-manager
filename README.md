@@ -26,7 +26,7 @@ There is no server. The page talks directly to the YouTube Data API v3 and the Y
 
 ## Things to know
 
-- Uploads from a Google Cloud project that has not passed YouTube's API compliance audit are locked to private by YouTube. Change visibility in YouTube Studio, or apply for the audit.
+- Uploads from a Google Cloud project that has not passed YouTube's API compliance audit are locked to private by YouTube and cannot be made public afterwards, even in YouTube Studio. Until the project passes the audit, upload videos that need to go public directly in YouTube Studio; this tool can still edit them and show their stats.
 - The YouTube API has a daily quota, and uploads are the most expensive call. The quota resets at midnight Pacific time.
 - While the OAuth consent screen is in "Testing", only listed test users can sign in.
 - Content Files live in the browser's local storage on one computer. They are not synced or backed up.
