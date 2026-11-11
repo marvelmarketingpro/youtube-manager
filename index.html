@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marvel Marketing Pro YouTube Manager</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="https://marvelmarketingpro.com/assets/img/icons/icon-32.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <a class="brand" href="#dashboard">
+      <img src="https://marvelmarketingpro.com/assets/img/logo-white.png" alt="Marvel Marketing Pro" onerror="this.outerHTML='<span class=&quot;brand__text&quot;>Marvel Marketing Pro</span>'">
+      <span class="brand__sub">YouTube Manager</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#dashboard" data-view="dashboard"><svg viewBox="0 0 24 24"><path d="M3 13h8V3H3zm0 8h8v-6H3zm10 0h8V11h-8zm0-18v6h8V3z"/></svg>Dashboard</a>
+      <a href="#videos" data-view="videos"><svg viewBox="0 0 24 24"><path d="M4 6h12a2 2 0 0 1 2 2v2.5l4-2.5v8l-4-2.5V16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/></svg>Videos</a>
+      <a href="#upload" data-view="upload"><svg viewBox="0 0 24 24"><path d="M11 16V7.8L8.4 10.4 7 9l5-5 5 5-1.4 1.4L13 7.8V16zm-7 4v-5h2v3h12v-3h2v5z"/></svg>Upload</a>
+      <a href="#files" data-view="files"><svg viewBox="0 0 24 24"><path d="M10 4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Content Files</a>
+      <a href="#settings" data-view="settings"><svg viewBox="0 0 24 24"><path d="M19.4 13a7.5 7.5 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.6 7.6 0 0 0-1.7-1L15 3h-4l-.4 2.9a7.6 7.6 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.5 7.5 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1a7.6 7.6 0 0 0 1.7 1L11 21h4l.4-2.9a7.6 7.6 0 0 0 1.7-1l2.5 1 2-3.5zM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z"/></svg>Settings</a>
+    </nav>
+    <div class="side__foot" id="account"></div>
+  </aside>
+
+  <main class="main">
+    <header class="top">
+      <h1 id="viewTitle">Dashboard</h1>
+      <div class="top__actions" id="topActions"></div>
+    </header>
+    <div id="demoBar" class="demo-bar" hidden>Sample data. These numbers are placeholders, not your channel. <button class="link" id="exitDemo">Exit preview</button></div>
+    <section id="view" class="view"></section>
+  </main>
+</div>
+
+<div id="modal" class="modal" hidden><div class="modal__box" id="modalBox"></div></div>
+<div id="toasts" class="toasts"></div>
+<script src="app.js"></script>
+</body>
+</html>
